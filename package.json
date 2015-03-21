@@ -1,0 +1,32 @@
+{
+  "name": "puck",
+  "version": "1.0.0",
+  "description": "Very small template for very small apps.",
+  "main": "app.js",
+  "scripts": {
+    "sass": "node-sass src/sass/*.scss -o dist/ -w",
+    "serve": "http-server",
+    "reload": "livereload . -i 200",
+    "webpack": "webpack src/js/*.js dist/js/bundle.js -w",
+    "watch": "npm run reload & npm run sass & npm run webpack & npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gSchool/puck.git"
+  },
+  "author": "Aaron Gray <aaron@hellometa.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gSchool/puck/issues"
+  },
+  "homepage": "https://github.com/gSchool/puck",
+  "devDependencies": {
+    "babel": "^4.6.6",
+    "babel-core": "^4.7.12",
+    "babel-loader": "^4.1.0",
+    "http-server": "^0.7.5",
+    "livereload": "^0.3.6",
+    "node-sass": "^2.0.1",
+    "webpack": "^1.7.3"
+  }
+}
